@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      {/* <h1>Vite + React</h1> */}
 
       {/* navbar starts here */}
       <div class="navbar bg-base-100 shadow-sm">
@@ -35,52 +35,33 @@ function App() {
               tabindex="-1"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+             
+             <li><a href="">Home</a></li>
+             <li><a href="">Changelog</a></li>
+             <li><a href="">Blog</a></li>
+             <li><a href="">Download</a></li>
+             <li><a href="">Contact</a></li>
+              
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost text-xl">CS — Ticket System</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2 bg-base-100 w-40 z-1">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+        <div class="navbar-end hidden lg:flex">
+          
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+             <li><a href="">Home</a></li>
+             <li><a href="">Changelog</a></li>
+             <li><a href="">Blog</a></li>
+             <li><a href="">Download</a></li>
+             <li><a href="">Contact</a></li>
+          </ul>
+          </div>
+          <div>
+            <a  class="btn">New Ticket</a>
+          </div>
         </div>
       </div>
       {/* navbar ended here */}
