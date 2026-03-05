@@ -79,7 +79,7 @@ const Navbar = () => {
                               </li>
                         </ul>
                     </div>
-                        <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] cursor-pointer text-white py-4 px-4 rounded-lg" href="#">
+                        <a className="btn bg-linear-to-br from-[#632EE3] to-[#9F62F2] transition-all duration-300 cursor-pointer text-white py-4 px-4 rounded-lg" href="#">
                              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
                              New Ticket
                         </a>

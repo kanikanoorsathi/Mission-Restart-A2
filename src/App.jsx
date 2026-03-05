@@ -2,14 +2,17 @@
 import "./App.css";
 import Footer from './components/Footer/Footer'
 import Navbar from "./components/Navbar/Navbar";
-// import bannerimg from './assets'
+import Banner from "./components/Banner/Banner"
 
 function App() {
 
   return (
     <>
-    <Navbar></Navbar>
-    <Footer></Footer>
+    <div className="lg: w-11/12 mx-auto">
+      <Navbar></Navbar>
+      <Banner></Banner>
+      <Footer></Footer>
+    </div>
 
     </>
   );

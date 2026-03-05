@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Facebook, Linkedin, Mail, X } from 'lucide-react';
 const Footer = () => {
   return (
     <div>
@@ -30,10 +30,19 @@ const Footer = () => {
 
         <nav>
           <h6 className="text-white">Social Links</h6>
-          <a className="link link-hover text-gray-400">@CS — Ticket Systeme</a>
-          <a className="link link-hover text-gray-400">@CS — Ticket Systeme</a>
-          <a className="link link-hover text-gray-400">@CS — Ticket Systeme</a>
-          <a className="link link-hover text-gray-400">support@cst.com</a>
+          <a className="link link-hover text-gray-400 flex items-center gap-2">
+            <X className="bg-white rounded-full font-bold text-black h-4 w-4 p-1"/> 
+            @CS — Ticket Systeme</a>
+          <a className="link link-hover text-gray-400 flex items-center gap-2">
+            <Linkedin className="bg-white rounded-full font-bold text-black h-4 w-4 p-1"/> 
+            @CS — Ticket Systeme</a>
+          <a className="link link-hover text-gray-400 flex items-center gap-2">
+           <Facebook className="bg-white rounded-full font-bold text-black h-4 w-4 p-1"/> 
+           @CS — Ticket Systeme
+          </a>
+          <a className="link link-hover text-gray-400 flex items-center gap-2">
+            <Mail className="bg-white rounded-full font-bold text-black h-4 w-4 p-1" />
+            support@cst.com</a>
         </nav>
       </footer>
       {/* footer ended here */}
