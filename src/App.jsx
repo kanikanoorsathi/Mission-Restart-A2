@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <div className="lg: w-11/12 mx-auto">
+    <div className="w-full lg:w-11/12 mx-auto">
       <Navbar></Navbar>
       <Banner></Banner>
       <Footer></Footer>

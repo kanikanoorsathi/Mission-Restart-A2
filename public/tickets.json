@@ -1,0 +1,140 @@
+[
+    { 
+        "id": 1,
+        "title": "Login Issue",
+        "description": "User cannot login to the account using correct credentials.",
+        "customer": "Rahim Uddin",
+        "priority": "High",
+        "status": "In Progress",
+        "createdAt": "2026-03-01"
+    },
+
+    {
+        "id": 2,
+        "title": "Payment Failed",
+        "description": "Customer payment failed during checkout process.",
+        "customer": "Karim Ahmed",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "2026-03-02"
+    },
+
+    {
+        "id": 3,
+        "title": "Password Reset",
+        "description": "Customer requested password reset but email not received.",
+        "customer": "Nusrat Jahan",
+        "priority": "Medium",
+        "status": "Resolved",
+        "createdAt": "2026-03-01"
+    },
+
+    {
+        "id": 4,
+        "title": "Page Loading Slow",
+        "description": "Dashboard page is loading very slowly.",
+        "customer": "Tanvir Hasan",
+        "priority": "Low",
+        "status": "In Progress",
+        "createdAt": "2026-02-28"
+    },
+{
+"id": 5,
+"title": "Profile Update Error",
+"description": "Customer unable to update profile information.",
+"customer": "Sadia Akter",
+"priority": "Medium",
+"status": "Open",
+"createdAt": "2026-03-03"
+},
+{
+"id": 6,
+"title": "Notification Not Working",
+"description": "User not receiving notifications after updates.",
+"customer": "Imran Hossain",
+"priority": "Low",
+"status": "Resolved",
+"createdAt": "2026-02-27"
+},
+{
+"id": 7,
+"title": "App Crash",
+"description": "Mobile app crashes when opening settings.",
+"customer": "Farzana Rahman",
+"priority": "High",
+"status": "In Progress",
+"createdAt": "2026-03-02"
+},
+{
+"id": 8,
+"title": "Search Not Working",
+"description": "Search function returns no results even for valid queries.",
+"customer": "Jahid Hasan",
+"priority": "Medium",
+"status": "Open",
+"createdAt": "2026-03-03"
+},
+{
+"id": 9,
+"title": "Order History Missing",
+"description": "Customer cannot see previous order history.",
+"customer": "Mim Akter",
+"priority": "High",
+"status": "In Progress",
+"createdAt": "2026-03-01"
+},
+{
+"id": 10,
+"title": "UI Alignment Problem",
+"description": "Buttons overlapping on small screen devices.",
+"customer": "Shakil Ahmed",
+"priority": "Low",
+"status": "Resolved",
+"createdAt": "2026-02-25"
+},
+{
+"id": 11,
+"title": "Email Verification Issue",
+"description": "Verification email link not working.",
+"customer": "Rafiul Islam",
+"priority": "Medium",
+"status": "Open",
+"createdAt": "2026-03-04"
+},
+{
+"id": 12,
+"title": "Checkout Button Disabled",
+"description": "Checkout button remains disabled even after filling details.",
+"customer": "Sumaiya Khan",
+"priority": "High",
+"status": "In Progress",
+"createdAt": "2026-03-04"
+},
+{
+"id": 13,
+"title": "Image Upload Failed",
+"description": "User cannot upload profile picture.",
+"customer": "Mahmud Hasan",
+"priority": "Low",
+"status": "Resolved",
+"createdAt": "2026-02-26"
+},
+{
+"id": 14,
+"title": "Language Change Bug",
+"description": "Language settings reset automatically.",
+"customer": "Arifa Sultana",
+"priority": "Medium",
+"status": "Open",
+"createdAt": "2026-03-03"
+},
+{
+"id": 15,
+"title": "Logout Problem",
+"description": "User cannot logout from mobile device.",
+"customer": "Sabbir Hossain",
+"priority": "Low",
+"status": "Resolved",
+"createdAt": "2026-02-24"
+}
+]
