@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import vector1 from "../../assets/vector1.png";
 // import vector2 from "../../assets/vector2.png"
 
-const Banner = () => {
-    const [inProgress, setInProgress] = useState(0);
-    const [resolved , setResolved] = useState(0);
+const Banner = ({inProgress, resolved}) => {
+    // new code
+    //  const Banner = () =>{}
+    // const [inProgress, setInProgress] = useState(0);
+    // const [resolved , setResolved] = useState(0);
     return (
         <div className='mx-auto my-10'>
             <div className='flex flex-col lg:flex-row justify-between items-center text-white gap-8 mt-12'>
