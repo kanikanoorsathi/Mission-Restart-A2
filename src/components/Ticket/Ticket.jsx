@@ -27,7 +27,7 @@ const Ticket = ({ticket, handlePendingClick}) => {
                 </div>
             </div>
             <p className='font-normal text-gray-500 text-xs lg:text-lg'>{description}</p>
-            <div className='grid grid-cols-2 my-2 text-xs lg:text-lg'>
+            <div className='grid grid-cols-2 my-2 text-xs lg:text-text-base'>
                 <div className='flex justify-start'>
                     <p className='font-normal text-gray-500  mr-6'>#{id}</p>
                     <h4 className={`uppercase ${priorityColor[priority.toLowerCase()]}`}>{priority}priority</h4>
