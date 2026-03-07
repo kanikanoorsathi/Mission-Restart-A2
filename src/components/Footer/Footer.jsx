@@ -4,10 +4,11 @@ const Footer = () => {
   return (
     <div>
       {/* footer starts here */}
-      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 mt-5">
         <nav>
           <h6 className="text-white text-xl">CS — Ticket System</h6>
-          <p className="text-gray-400">Lorem Ipsum is simply dummy text of the</p>
+          <p className="text-gray-400">A modern platform designed to simplify customer<br/>
+          support, organize tickets, and help support teams <br/> provide faster and more reliable solutions.</p>
         </nav>
         <nav>
           <h6 className="text-white">Company</h6>

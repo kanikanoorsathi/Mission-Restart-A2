@@ -11,7 +11,7 @@ import Ticket from '../Ticket/Ticket';
 const TicketCard = ({ticktCardPromise, handlePendingClick}) => {
     const ticketCard = use(ticktCardPromise);
    // console.log(ticketCard);
-    return (
+    return ( 
         <div>
             {/* <h3>TicketCart: {ticketCard.length}</h3> */}
             

@@ -19,6 +19,9 @@ const Main = () => {
     const [alertMsg, setalertMsg] = useState('')
 
 const handlePendingClick =(ticket) => {
+    const exists = pendingTickets.find(t => t.id === ticket.id);
+    if(exists) return;
+
     setPendingTickets((prev) => [...prev, ticket])
     setInProgress((prev) => prev + 1);
 }
@@ -67,18 +70,23 @@ const handleComplete = (ticket) =>{
                     {/* new div */}
                     <div>
                         {
-                            pendingTickets.map(ticket => (
-                                <div className='bg-white p-8 rounded-xl shadow-sm border border-gray-100 my-6' key={ticket.id}>
-                                    <p>{ticket.title}</p>
-                                    <button onClick={() => handleComplete(ticket)}
-                                             className='btn btn-base btn-success mt-2 w-full text-base'
-                                        >
-                                            Complete
-                                    </button>
-                                </div> 
+                            pendingTickets.length === 0 ? (
+                                <p className='text-gray-500 text-center lg:text-start'>
+                                    Select a ticket to add to Task Status
+                                </p>
+                            ) : (
+                                        pendingTickets.map(ticket => (
+                                            <div className='bg-white p-8 rounded-xl shadow-sm border border-gray-100 my-6' key={ticket.id}>
+                                                <p>{ticket.title}</p>
+                                                <button onClick={() => handleComplete(ticket)}
+                                                         className='btn btn-base btn-success mt-2 w-full text-base'
+                                                     >
+                                                         Complete
+                                                </button>
+                                            </div> 
                                 
-                            ))
-
+                                    ))
+                                )
                         }
                     </div>
 
@@ -88,11 +96,17 @@ const handleComplete = (ticket) =>{
                     <h2 className='font-semibold text-xl text-black my-4 text-center lg:text-start'>Resolved Task</h2>
                     <div>
                         {
-                            resolvedTickets.map(ticket => (
-                               <div className='btn btn-active p-2 w-full mb-4' key={ticket.id}>
-                                   <p>{ticket.title}</p>
-                               </div>
-                            ))
+                            resolvedTickets.length === 0 ? (
+                                <p className='text-gray-500 text-center lg:text-start'>
+                                    No resolved tasks yet.
+                                </p>
+                            ) : (
+                                    resolvedTickets.map(ticket => (
+                                        <div className='btn btn-active p-2 w-full mb-4' key={ticket.id}>
+                                            <p>{ticket.title}</p>
+                                        </div>
+                                    ))
+                                )
 
                         }
                     </div>
