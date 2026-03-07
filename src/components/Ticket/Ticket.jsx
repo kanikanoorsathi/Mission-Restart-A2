@@ -15,7 +15,7 @@ const Ticket = ({ticket, handlePendingClick}) => {
     const {title, status, description, id, priority, customer, createdAt } = ticket
     return (
         
-        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 cursor-pointer hover:bg-violet-100 my-6">
+        <div onClick={() => handlePendingClick(ticket)} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 cursor-pointer hover:bg-violet-100 my-6">
             
             <div className='flex flex-wrap justify-between mb-3'>
                 {/* <button className="p-4 rounded-sm shadow-md cursor-pointer" onClick={() => handlePendingClick(ticket)}></button> */}
@@ -23,7 +23,7 @@ const Ticket = ({ticket, handlePendingClick}) => {
                 {/* <span className='badge badge-success text-white '>{status}</span> */}
                 <div className={`flex justify-center items-center gap-2 font-bold py-1 px-3 rounded-full ${status === "Open" ?"text-green-500 bg-green-200" : "text-yellow-500 bg-yellow-200" }`}>
                     <div className={`h-4 w-4  rounded-full ${status === "Open" ? "bg-green-500" : "bg-yellow-500"}`}></div>
-                    <p onClick={() => handlePendingClick(ticket)}> {status}</p>
+                    <p> {status}</p>
                 </div>
             </div>
             <p className='font-normal text-gray-500 text-xs lg:text-lg'>{description}</p>
